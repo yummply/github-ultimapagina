@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Diego" />
+    <meta name="keywords" content="HTML, CSS, Astro" />
+    <title>AI! que arte! - Blog</title>
+    <!-- <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} /> -->
+    <style>
+    :root {
+  --color1: #eeeadf;
+  --color2: #313026;
+  --color3: #6a3e2e;
+  --color4: #a34c37;
+  --color5: #dd5a40;
+  --color6: #BBB6DF;
+  --fg-dark: #ffffff;
+  --font1: 'Fira Sans Condensed', sans-serif;
+  --font2: 'Special Elite', cursive;
+}
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font1);
+}
+body {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color5);
+  font-family: var(--font2);
+  margin-bottom: 0.5em;
+}
+#header {
+  background-color: var(--color3);  
+  color: var(--fg-dark);
+  min-height: 2em;
+}
+#header .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#header a {
+  color: inherit;
+}
+#menu ul {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  margin-right: 1em;
+}
+#menu ul li {
+  list-style: none;
+  padding: 0.5em;
+}
+.box {
+  min-height: 2em;
+  width: 100%;
+}
+.box.color1 {
+  background-color: var(--color1);
+}
+.box.color2 {
+  background-color: var(--color2);
+}
+.box.color3 {
+  background-color: var(--color3);
+}
+.box.color4 {
+  background-color: var(--color4);
+}
+.box.color5 {
+  background-color: var(--color5);
+}
+.blog-post .title {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.blog-post p {
+  margin-bottom: 0.6em;
+}
+.blog-top {
+  font-family: Fira Sans Condensed;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 20px;
+  line-height: 24px;
+  color: #b4290d;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+}
+.foot {
+  background-color: var(--color2);
+  color: var(--color1);
+  font-size: 0.8em;
+  text-align: center;
+  padding: 2em;
+  margin-top: 2em;
+}
+.foot .links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 2em auto;
+  width: 100%;  
+  justify-content: center;  
+}
+.links ul li {
+  list-style: none;
+}
+img.logo {
+  filter: drop-shadow(0px 0px 2px var(--color4));  
+}
+img.logo:hover {
+  filter: drop-shadow(2px 2px 2px var(--color5));
+}
+    </style>
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div id="logo">
+          <!-- Aquí irá el logo -->
+          <a href="/home">
+            <img class="logo" src="/assets/logo.png" />
+          </a>
+        </div>
+        <div id="menu">
+          <!-- Aquí irá el listado de opciones -->
+          <ul>
+            <li>
+              <a href="/about">Acerca de</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
+              <a href="/contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- header -->
+    <!-- ======= Bloque de página ======= -->
+    <div class="main">
+      <h1>Blog</h1>
+      <p>Últimas entradas de mi blog</p>
+      <div class="blog-post">
+        <div class="title">Ejemplo de título</div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum pharetra ex in commodo. Pellentesque consequat, justo a porttitor sagittis, nulla mi bibendum quam, vitae aliquam augue nisl quis erat. Etiam vel commodo sapien, eget ultrices sapien. Curabitur vitae varius lorem. Proin eu fermentum ligula. Donec quam odio, rhoncus id sem eget, dictum rhoncus magna. Quisque vel urna eros. Aliquam efficitur ornare lacus quis lobortis. Vivamus tempus sem vel dui dignissim congue. Donec et risus tortor. Cras eleifend mi eu est commodo mattis sed vitae odio. Aenean non neque mattis, gravida quam sit amet, consectetur risus. Nam eget scelerisque tellus. Phasellus mollis, mi vel malesuada hendrerit, tellus eros elementum odio, vel consequat nunc justo tristique nisl.</p>
+          <p>Cras ac mi elit. Nulla enim magna, ultrices a urna quis, congue pellentesque erat. Morbi commodo quam id mi facilisis pharetra. Proin ultrices quam ultrices lectus condimentum viverra. Nullam et dictum ligula, nec fermentum neque. Curabitur congue faucibus tempor. Sed pharetra mauris neque, eu congue mauris suscipit sit amet. Praesent porttitor efficitur ultrices.</p>
+          <p>Pellentesque non ipsum eget nibh dapibus sodales. Aliquam pretium a risus non facilisis. Nunc ante sem, efficitur sed tincidunt et, pharetra eget tellus. In pellentesque facilisis eros, at condimentum enim facilisis nec. Curabitur ex mi, commodo ac posuere vitae, tempor et nulla. Aliquam erat volutpat. Nam tincidunt, dolor et laoreet dictum, velit urna sollicitudin lorem, nec rhoncus magna velit eget ante. Sed nec accumsan augue, in fermentum justo. Aenean in lectus egestas, auctor nisl vitae, pellentesque magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus quis tortor non libero ullamcorper pharetra vel eu nunc. Nullam luctus felis ac justo blandit sollicitudin vehicula in massa.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ======== Pie de página ========= -->
+    <div class="foot">
+      <p>Proyecto para la asignatura de Tecnologías de la Información I de Escuela IDEO</p>
+      <p>Autor de la página: Diego G</p>
+      
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/about">Acerca de</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
